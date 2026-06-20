@@ -132,7 +132,7 @@ resource vm 'Microsoft.Compute/virtualMachines@2023-09-01' = {
 }
 
 resource autoShutdown 'Microsoft.DevTestLab/schedules@2018-09-15' = {
-  name: '${vm.name}-shutdown'
+  name: 'shutdown-computevm-${vm.name}'
   location: location
   properties: {
     status: 'Enabled'
