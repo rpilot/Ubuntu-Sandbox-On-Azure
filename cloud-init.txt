@@ -15,6 +15,7 @@ packages:
 runcmd:
   # Enable RDP
   - systemctl enable xrdp
+  - sed -i 's/max_bpp=32/max_bpp=24/g' /etc/xrdp/xrdp.ini
   - systemctl start xrdp
 
   # XFCE session setup
@@ -28,6 +29,8 @@ runcmd:
   - apt-get update
   - apt-get install -y code
 
-  # Create workspace
+  # Create workspace and install useful extensions automatically
   - mkdir -p /home/azureuser/workspace
   - chown -R azureuser:azureuser /home/azureuser/workspace
+  - sudo -u azureuser code --install-extension ms-python.python
+  - sudo -u azureuser code --install-extension ms-vscode.remote-ssh
