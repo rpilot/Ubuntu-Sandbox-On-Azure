@@ -1,6 +1,4 @@
-Here is your README in **ready-to-copy `.md` format**:
 
-```md
 # 🚀 Azure Claude Code Sandbox (Bicep)
 
 This repository contains a **Bicep template** to deploy a secure, disposable Ubuntu VM sandbox on Azure for experimenting with tools like Claude Code.
@@ -13,13 +11,10 @@ The VM is configured with:
 - ✅ Public IP restricted to **your IP only**
 - ✅ Daily **auto-shutdown at 22:00 CET**
 - ✅ Lightweight and cost-efficient setup
-
 ---
 
 # 🏗️ Architecture Overview
-
 ```
-
 Azure Resource Group
 │
 ├── Virtual Network (VNet)
@@ -40,8 +35,7 @@ Azure Resource Group
 │   └── Git
 │
 └── Auto-shutdown schedule (22:00 CET)
-
-````
+```
 
 ---
 
@@ -61,7 +55,7 @@ Azure Resource Group
 - Logged in to Azure:
   ```bash
   az login
-````
+  ```
 
 * Existing resource group:
   ```bash
@@ -90,7 +84,7 @@ Azure Resource Group
 ## 1. Clone the repo
 
 ```bash
-git clone [https://github.com/<your-repo>.git](https://github.com/rpilot/Ubuntu-Sandbox-On-Azure.git)
+git clone https://github.com/rpilot/Ubuntu-Sandbox-On-Azure.git
 cd Ubuntu-Sandbox-On-Azure
 ```
 
